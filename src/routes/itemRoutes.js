@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
 // Get all items
 router.get('/', async (req, res) => {
     try {
-        res.json({ message: 'Get all items' });
+        res.json({ message: 'Get all items - docker check' });
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

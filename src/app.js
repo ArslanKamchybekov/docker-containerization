@@ -7,6 +7,11 @@ const PORT = 4000;
 // Middleware
 app.use(bodyParser.json());
 
+// test route
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
 // Define routes
 app.use('/api/items', require('./routes/itemRoutes'));
 
